@@ -15,9 +15,9 @@ public class kNearestNeighbours {
 
     public static void main(String[] args) throws IOException {
 
-        VFSGroupDataset<FImage> training = new VFSGroupDataset<FImage>("C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\training", ImageUtilities.FIMAGE_READER);
+        VFSGroupDataset<FImage> training = new VFSGroupDataset<FImage>("/home/yoanapaleva/Documents/Computer-Vision/training", ImageUtilities.FIMAGE_READER);
 
-        VFSListDataset<FImage> test = new VFSListDataset<FImage>("C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\testing", ImageUtilities.FIMAGE_READER);
+        VFSListDataset<FImage> test = new VFSListDataset<FImage>("/home/yoanapaleva/Documents/Computer-Vision/testing", ImageUtilities.FIMAGE_READER);
 
         int size = 16;
         int k = 3;

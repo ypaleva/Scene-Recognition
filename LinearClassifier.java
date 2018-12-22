@@ -38,9 +38,9 @@ public class LinearClassifier {
 
             System.out.println("Retrieving dataset...");
             GroupedDataset<String, VFSListDataset<FImage>, FImage> allData =
-                    new VFSGroupDataset<FImage>("C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\training", ImageUtilities.FIMAGE_READER);
+                    new VFSGroupDataset<FImage>("/home/yoanapaleva/Documents/Computer-Vision/training", ImageUtilities.FIMAGE_READER);
 
-            VFSListDataset<FImage> testing = new VFSListDataset<FImage>("C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\testing", ImageUtilities.FIMAGE_READER); //load the test set as VFSListDataset
+            VFSListDataset<FImage> testing = new VFSListDataset<FImage>("/home/yoanapaleva/Documents/Computer-Vision/testing", ImageUtilities.FIMAGE_READER); //load the test set as VFSListDataset
 
             HardAssigner<float[], float[], IntFloatPair> assigner =
                     trainQuantiser(GroupedUniformRandomisedSampler.sample(allData, 100));

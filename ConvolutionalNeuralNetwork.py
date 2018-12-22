@@ -1,9 +1,8 @@
-import cv2  # working with, mainly resizing, images
-import numpy as np  # dealing with arrays
-import os  # dealing with directories
-from random import shuffle  # mixing up or currently ordered data that might lead our network astray in training.
-from tqdm import tqdm  # a nice pretty percentage bar for tasks. Thanks to viewer Daniel BA1/4hler for this suggestion
-
+import cv2 
+import numpy as np 
+import os 
+from random import shuffle  
+from tqdm import tqdm  
 import tflearn
 from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
@@ -12,8 +11,8 @@ from tflearn.layers.estimator import regression
 import tensorflow as tf
 
 
-TRAIN_DIR = "C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\training"
-TEST_DIR = "C:\\cygwin64\\home\\spas2\\Coursework1\\src\\main\\java\\ss1g16\\dataset\\testing"
+TRAIN_DIR = "/home/yoanapaleva/Documents/Computer-Vision/training"
+TEST_DIR = "/home/yoanapaleva/Documents/Computer-Vision/testing"
 IMG_SIZE = 200
 LR = 1e-3
 
